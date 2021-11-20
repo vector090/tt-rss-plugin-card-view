@@ -19,7 +19,7 @@ require(['dojo/_base/kernel', 'dojo/ready'], function  (dojo, ready) {
 						${hl.title}</a>
 				</span>
 					<img src="${App.escapeHtml(flavor.image)}">
-					<p class="text-muted text-small">${hl.content_preview.replace("&nbsp;", "")}</p>
+					<p class="text-muted text-small">${hl.content_preview.replace("&mdash;", "")}</p>
 				`;
 			}
 

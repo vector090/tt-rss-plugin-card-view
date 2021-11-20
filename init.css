@@ -4,7 +4,9 @@
 }
 
 .cdm .titleWrap {
-   display : none;
+   opacity : 0;
+   overflow: hidden;
+   white-space: nowrap ! important;
 }
 
 .cdm .content-inner a.card-title {

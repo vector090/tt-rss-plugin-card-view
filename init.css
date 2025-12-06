@@ -19,5 +19,47 @@
 }
 
 .cdm.Unread .content-inner a.card-title {
-   color : black;
+	color : black;
+}
+
+.content-preview {
+   cursor: pointer;
+   transition: color 0.2s;
+}
+
+.content-preview:hover {
+   color: #0066cc;
+}
+
+/* Dynamic content panel for card view dialog */
+.panel-scrollable-dynamic {
+   overflow-y: auto !important;
+   scroll-behavior: auto !important;
+   border: 1px solid #ddd;
+   padding: 10px;
+   margin: 10px;
+   background: white;
+   flex: 1 1 auto !important;
+   min-height: 0 !important;
+   max-height: none !important;
+}
+
+/* Make card view dialog wider and taller for better content viewing */
+[id^="card-view-content-dialog-"] {
+   width: 80vw !important;
+   max-width: 1200px !important;
+   min-width: 600px !important;
+   height: 80vh !important;
+   max-height: 900px !important;
+   min-height: 400px !important;
+}
+
+[id^="card-view-content-dialog-"] .dijitDialogPaneContent {
+   width: 100% !important;
+   max-width: none !important;
+   height: calc(80vh - 60px) !important; /* Account for title bar */
+   max-height: calc(900px - 60px) !important;
+   display: flex !important;
+   flex-direction: column !important;
+   padding: 0 !important;
 }

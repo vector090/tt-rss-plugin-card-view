@@ -2,8 +2,8 @@
 class Card_View extends Plugin {
 
    function about() {
-		return array(1.0,
-			"Experimental card view for combined mode",
+		return array(1.1,
+			"Experimental card view for combined mode, with content view pop-up",
 			"fox");
 	}
 
